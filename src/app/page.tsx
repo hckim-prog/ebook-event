@@ -8,7 +8,7 @@ export default function Home() {
       id: 1,
       title: "사이트 접속하기",
       description: <>한빛+ 사이트 우측 상단의 <span className="font-bold">[교수전용]</span> 아이콘을 클릭해 접속하세요.</>,
-      image: "/step-1-zoom.jpg",
+      image: "/step-1.jpg",
       zoomOrigin: "origin-top-right",
     },
     {
