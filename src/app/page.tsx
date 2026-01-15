@@ -31,18 +31,25 @@ export default function Home() {
     <main className="min-h-screen bg-white text-gray-900 pb-20">
       {/* Hero Section */}
       <section className="relative w-full h-screen flex flex-col items-center justify-center bg-gray-50 overflow-hidden">
-        <div className="absolute inset-0 w-full h-full z-0 bg-white">
-          {/* Spline Background Removed for White Mode */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <iframe
+            src='https://my.spline.design/retrofuturismbganimation-cVmvihAOXEOjHqzGiZ4as5vD/'
+            frameBorder='0'
+            width='100%'
+            height='100%'
+            className="w-full h-full"
+            title="Spline 3D Background"
+          />
         </div>
 
         {/* Hero Content Overlay */}
         {/* Hero Content Overlay */}
         <div className="relative z-10 text-center px-4 animate-fade-in-up pointer-events-none flex flex-col items-center w-full">
-          <div className="bg-white rounded-3xl p-8 md:p-12 max-w-7xl mx-auto w-full md:w-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-gray-900 leading-tight">
-              <span className="text-orange-500">한빛+ 전자책 증정</span> 서비스 오픈
+          <div className="bg-black/30 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl max-w-7xl mx-auto w-full md:w-auto">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 drop-shadow-[0_2px_10px_rgba(255,165,0,0.3)] whitespace-normal break-keep">
+              한빛+ 전자책 증정 서비스 오픈
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto mb-12 font-bold leading-relaxed tracking-wide">
+            <p className="text-2xl md:text-3xl text-white max-w-4xl mx-auto mb-12 font-bold leading-relaxed tracking-wide drop-shadow-sm">
               구글 플레이북의 번거로움은 이제 그만.<br />
               한빛+ 사이트에서 신청부터 열람까지,<br />
               끊김 없이 바로 열람하세요.
@@ -50,7 +57,7 @@ export default function Home() {
             <div className="pointer-events-auto inline-block">
               <button
                 onClick={() => document.getElementById('steps-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-10 py-5 bg-white text-gray-900 text-xl rounded-full font-bold border border-gray-300 hover:bg-gray-50 transition-all hover:scale-105 shadow-sm"
+                className="px-10 py-5 bg-white text-black text-xl rounded-full font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-[0_0_30px_rgba(255,255,255,0.4)]"
               >
                 알아보기
               </button>
