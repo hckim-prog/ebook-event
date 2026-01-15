@@ -45,7 +45,7 @@ export default function Home() {
         {/* Hero Content Overlay */}
         {/* Hero Content Overlay */}
         <div className="relative z-10 text-center px-4 animate-fade-in-up pointer-events-none flex flex-col items-center w-full">
-          <div className="bg-black/50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl max-w-7xl mx-auto w-full md:w-auto">
+          <div className="bg-gray-800/60 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl max-w-7xl mx-auto w-full md:w-auto">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-white drop-shadow-sm whitespace-normal break-keep">
               <span className="text-orange-400">한빛+ 전자책 증정</span> 서비스 오픈
             </h1>
