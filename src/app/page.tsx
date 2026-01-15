@@ -46,7 +46,7 @@ export default function Home() {
         {/* Hero Content Overlay */}
         <div className="relative z-10 text-center px-4 animate-fade-in-up pointer-events-none flex flex-col items-center w-full">
           <div className="bg-black/30 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl max-w-7xl mx-auto w-full md:w-auto">
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 drop-shadow-[0_2px_10px_rgba(255,165,0,0.3)] whitespace-nowrap">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 drop-shadow-[0_2px_10px_rgba(255,165,0,0.3)] whitespace-normal break-keep">
               한빛+ 전자책 증정 서비스 오픈
             </h1>
             <p className="text-2xl md:text-3xl text-white max-w-4xl mx-auto mb-12 font-bold leading-relaxed tracking-wide drop-shadow-sm">
