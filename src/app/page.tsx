@@ -14,10 +14,10 @@ export default function Home() {
     {
       id: 2,
       title: "견본도서(전자책) 신청하기",
-      // ▼▼▼ 수정된 부분 (글자 굵게, 색상 진하게) ▼▼▼
+      // ▼▼▼ 수정된 부분 (줄바꿈 <br/> 추가됨) ▼▼▼
       description: (
         <>
-          <span className="font-bold">[견본신청(전자책)]</span> 항목을 선택한 후, 필요한 도서 및 강의 정보를 입력하고 <span className="font-bold">[신청하기]</span> 버튼을 눌러주세요.
+          <span className="font-bold">[견본신청(전자책)]</span> 항목을 선택한 후, 필요한 도서 및 강의 정보를 입력하고<br /> <span className="font-bold">[신청하기]</span> 버튼을 눌러주세요.
           <br /><br />
           <span style={{ fontSize: '0.95em', color: '#333', fontWeight: 'bold' }}>
             ※ 신청하신 전자책은 승인 절차(48시간 이내)를 거친 후, 문자로 안내해 드립니다.
