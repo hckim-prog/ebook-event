@@ -14,7 +14,17 @@ export default function Home() {
     {
       id: 2,
       title: "견본도서(전자책) 신청하기",
-      description: <><span className="font-bold">[견본신청(전자책)]</span> 항목을 선택한 후, 필요한 도서 및 강의 정보를 입력하고 <span className="font-bold">[신청하기]</span> 버튼을 눌러주세요.</>,
+      // ▼▼▼ 수정된 부분 (글자 굵게, 색상 진하게) ▼▼▼
+      description: (
+        <>
+          <span className="font-bold">[견본신청(전자책)]</span> 항목을 선택한 후, 필요한 도서 및 강의 정보를 입력하고 <span className="font-bold">[신청하기]</span> 버튼을 눌러주세요.
+          <br /><br />
+          <span style={{ fontSize: '0.95em', color: '#333', fontWeight: 'bold' }}>
+            ※ 신청하신 전자책은 승인 절차(48시간 이내)를 거친 후, 문자로 안내해 드립니다.
+          </span>
+        </>
+      ),
+      // ▲▲▲ 수정 완료 ▲▲▲
       image: "/step-2.jpg",
       zoomOrigin: "origin-center",
     },
@@ -42,7 +52,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Hero Content Overlay */}
         {/* Hero Content Overlay */}
         <div className="relative z-10 text-center px-4 animate-fade-in-up pointer-events-none flex flex-col items-center w-full">
           <div className="bg-gray-800/60 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl max-w-7xl mx-auto w-full md:w-auto">
