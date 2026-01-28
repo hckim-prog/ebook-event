@@ -14,7 +14,6 @@ export default function Home() {
     {
       id: 2,
       title: "견본도서(전자책) 신청하기",
-      // ▼▼▼ 수정된 부분 (줄바꿈 <br/> 추가됨) ▼▼▼
       description: (
         <>
           <span className="font-bold">[견본신청(전자책)]</span> 항목을 선택한 후, 필요한 도서 및 강의 정보를 입력하고<br /> <span className="font-bold">[신청하기]</span> 버튼을 눌러주세요.
@@ -24,7 +23,6 @@ export default function Home() {
           </span>
         </>
       ),
-      // ▲▲▲ 수정 완료 ▲▲▲
       image: "/step-2.jpg",
       zoomOrigin: "origin-center",
     },
@@ -58,7 +56,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 text-white drop-shadow-sm whitespace-normal break-keep">
               <span className="text-orange-400">한빛+ 전자책 증정</span> 서비스 오픈
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-200 max-w-4xl mx-auto mb-12 font-bold leading-relaxed tracking-wide drop-shadow-sm">
+            <p className="text-2xl md:text-3xl text-gray-200 max-w-4xl mx-auto mb-12 font-bold leading-relaxed tracking-wide drop-shadow-sm break-keep">
               구글 플레이북의 번거로움은 이제 그만.<br />
               한빛+ 사이트에서 신청부터 열람까지,<br />
               끊김 없이 바로 열람하세요.
@@ -95,10 +93,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">{step.title}</h3>
-                <p className="text-lg text-gray-600 leading-relaxed word-keep-all">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 break-keep">{step.title}</h3>
+                {/* ▼▼▼ 여기가 수정된 핵심 포인트! (break-keep 추가됨) ▼▼▼ */}
+                <p className="text-lg text-gray-600 leading-relaxed word-keep-all break-keep">
                   {step.description}
                 </p>
+                {/* ▲▲▲ 수정 완료 ▲▲▲ */}
               </div>
             </div>
           ))}
