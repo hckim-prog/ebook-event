@@ -66,7 +66,7 @@ export default function Home() {
                 onClick={() => document.getElementById('steps-section')?.scrollIntoView({ behavior: 'smooth' })}
                 className="px-10 py-5 bg-white text-black text-xl rounded-full font-bold hover:bg-gray-200 transition-all hover:scale-105 shadow-lg"
               >
-                이용방업
+                이용방법
               </button>
             </div>
           </div>
